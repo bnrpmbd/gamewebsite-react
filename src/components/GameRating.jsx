@@ -1,24 +1,24 @@
-import React, {useState, useEffect, use} from 'react'
+import React, {useState, useEffect, useCallback} from 'react'
 import './gameRating.css'
 
 function GameRating({rating}) {
     const [stars, setStars] = useState([]);
 
-    const generateStars = () => {
-        let stars = [];
+    const generateStars = useCallback(() => {
+        let starsArr = [];
         if (rating > 5 || rating < 1) {
-            return;
+            return [];
         }
         for (let i = 0; i < rating; i++) {
-            stars.push(i);
+            starsArr.push(i);
         }
 
-        return stars;
-    };
+        return starsArr;
+    }, [rating]);
 
     useEffect(() => {
         setStars(generateStars());
-    }, []);
+    }, [generateStars]);
 
   return (
     <div className="gameRating">

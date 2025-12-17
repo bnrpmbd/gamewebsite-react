@@ -70,10 +70,12 @@
     gap: 20px;
 }
 
-.gameSlider .content .buttons a {
+.gameSlider .content .buttons button {
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
+    border: none;
+    cursor: pointer;
 }
 
 .gameSlider .content .buttons .orderBtn {

@@ -5,23 +5,23 @@ import userImg from '../images/user.jpg'
 function Header({ toggleActive }) {
   return (
     <header>
-        <a href="#" className="menu" onClick={toggleActive}>
+        <button type="button" className="menu" onClick={toggleActive}>
             <i className="bi bi-sliders"></i>
-        </a>
+        </button>
         <div className="userItems">
-            <a href="#" className="icon">
+            <button type="button" className="icon">
                 <i className="bi bi-heart-fill"></i>
                 <span className="like">0</span>
-            </a>
-            <a href="#" className="icon">
+            </button>
+            <button type="button" className="icon">
                 <i className="bi bi-bag-fill"></i>
                 <span className="bag">0</span>
-            </a>
+            </button>
             <div className="avatar">
-                <a href="#"><img src={userImg} alt="User Image" /></a>
+                <button type="button"><img src={userImg} alt="User avatar" /></button>
                 <div className="user">
                     <span>User Name</span>
-                    <a href="#">View Profile</a>
+                    <button type="button">View Profile</button>
                 </div>
             </div>
         </div>

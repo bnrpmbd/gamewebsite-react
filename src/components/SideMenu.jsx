@@ -1,17 +1,17 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './sideMenu.css'
 import navListData from '../data/navListData'
 import NavListItem from './NavListItem'
 
 function SideMenu({ active }) {
-    const [navData, setNavData] = useState(navListData);
+    const navData = navListData;
   return (
     // Side Menu
     <div className={`sideMenu ${active ? 'active' : undefined}`}>
-        <a href="#" className="logo">
+        <div className="logo">
             <i className="bi bi-controller"></i>
             <span className="brand">Play</span>
-        </a>
+        </div>
 
         {/* Navigation */}
         <ul className="nav">
@@ -23,24 +23,24 @@ function SideMenu({ active }) {
         {/* Social Media */}
         <ul className="social">
             <li>
-                <a href="#">
+                <button type="button">
                     <i className="bi bi-meta"></i>
-                </a>
+                </button>
             </li>
             <li>
-                <a href="#">
+                <button type="button">
                     <i className="bi bi-twitter-x"></i>
-                </a>
+                </button>
             </li>
             <li>
-                <a href="#">
+                <button type="button">
                     <i className="bi bi-youtube"></i>
-                </a>
+                </button>
             </li>
             <li>
-                <a href="#" className="share">
+                <button type="button" className="share">
                     <i className="bi bi-share"></i>
-                </a>
+                </button>
             </li>
         </ul>
     </div>

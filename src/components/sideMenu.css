@@ -24,6 +24,9 @@
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .sideMenu .nav {
@@ -34,7 +37,7 @@
     gap: 15px;
 }
 
-.sideMenu .nav li a {
+.sideMenu .nav li .navBtn {
     text-decoration: none;
     color: #ffffff;
     font-size: 1.2em;
@@ -48,10 +51,12 @@
     border-radius: 20px;
     width: 100%;
     transition: 0.5s;
+    border: none;
+    cursor: pointer;
 }
 
-.sideMenu .nav li a:hover,
-.sideMenu .nav li a.active {
+.sideMenu .nav li .navBtn:hover,
+.sideMenu .nav li .navBtn.active {
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
                 5px 5px 15px rgba(0, 0, 0, 0.35);
 }
@@ -66,14 +71,17 @@
     transition: 0.5s;
 }
 
-.sideMenu .social li a {
+.sideMenu .social li button {
     text-decoration: none;
     color: #ffffff;
     font-size: 1.5rem;
     transition: 0.3s;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-.sideMenu .social li a:hover {
+.sideMenu .social li button:hover {
     color: var(--secondary);
 }
 

@@ -7,6 +7,9 @@ section.home .sectionTitle {
     color: #ffffff;
     font-size: 1.2rem;
     transition: 0.3s;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .viewMore:hover {

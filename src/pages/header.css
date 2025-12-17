@@ -14,6 +14,9 @@ header {
 .menu {
     font-size: 1.8rem;
     color: #ffffff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .userItems {
@@ -35,6 +38,9 @@ header {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .userItems .icon .like,
@@ -72,9 +78,13 @@ header {
     border-radius: 50%;
 }
 
-.userItems .avatar a {
+.userItems .avatar button {
     color: #ffffff;
     font-size: 1.8rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
 .userItems .avatar .user {
@@ -87,7 +97,8 @@ header {
     font-size: 0.7rem;
 }
 
-.userItems .avatar .user a {
+.userItems .avatar .user button {
     text-decoration: none;
     font-size: 0.6rem;
+    text-align: left;
 }
