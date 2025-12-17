@@ -4,6 +4,8 @@ Website toko game modern yang dibangun dengan React. Menampilkan katalog game de
 
 ## 📸 Preview
 
+![Game Shop Website Preview](screenshots/preview.png)
+
 Website ini menampilkan:
 - Slider game interaktif dengan efek coverflow
 - Kartu game dengan informasi harga dan diskon
