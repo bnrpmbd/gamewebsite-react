@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# 🎮 Game Shop Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Website toko game modern yang dibangun dengan React. Menampilkan katalog game dengan fitur slider interaktif, rating, dan promo diskon.
 
-## Available Scripts
+## 📸 Preview
 
-In the project directory, you can run:
+Website ini menampilkan:
+- Slider game interaktif dengan efek coverflow
+- Kartu game dengan informasi harga dan diskon
+- Side menu navigasi
+- Trailer video game
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** v19.2.3
+- **Bootstrap** v5.3.8
+- **Bootstrap Icons** v1.13.1
+- **Swiper** v12.0.3 (untuk slider)
+- **Create React App**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Struktur Project
 
-### `npm test`
+```
+src/
+├── components/
+│   ├── GameCard.jsx      # Komponen kartu game
+│   ├── GameRating.jsx    # Komponen rating bintang
+│   ├── GameSlide.jsx     # Komponen slide individual
+│   ├── GameSwiper.jsx    # Komponen slider utama
+│   ├── NavListItem.jsx   # Item navigasi
+│   └── SideMenu.jsx      # Menu samping
+├── pages/
+│   ├── Header.jsx        # Header dengan search bar
+│   ├── Home.jsx          # Halaman utama
+│   └── Main.jsx          # Layout utama
+├── data/
+│   └── navListData.js    # Data navigasi
+└── App.js                # Entry point
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Cara Menjalankan
 
-### `npm run build`
+### Prasyarat
+- Node.js (v16 atau lebih baru)
+- npm atau yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Instalasi
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+# Clone repository
+git clone https://github.com/USERNAME/game-shop-website.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Masuk ke direktori project
+cd game-shop-website
 
-### `npm run eject`
+# Install dependencies
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Menjalankan Development Server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Buka [http://localhost:3000](http://localhost:3000) di browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Build untuk Production
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Hasil build akan tersedia di folder `build/`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎯 Fitur
 
-### Code Splitting
+- ✅ Responsive design dengan Bootstrap
+- ✅ Slider game dengan efek coverflow (Swiper.js)
+- ✅ Sistem rating game
+- ✅ Tampilan harga dengan diskon
+- ✅ Side menu navigasi
+- ✅ Preview trailer video
+- ✅ Kategori game (MOBA, Racing, Fighting, dll)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 API Data
 
-### Analyzing the Bundle Size
+Data game disimpan di `public/api/gamesData.json` dengan struktur:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```json
+{
+  "_id": 1,
+  "title": "League of Legends",
+  "description": "...",
+  "level": "Median",
+  "category": "MOBA",
+  "rating": 3,
+  "discount": 0.5,
+  "price": 79.0,
+  "img": "./assets/games/lol-bg.jpeg",
+  "trailer": "https://youtube.com/embed/...",
+  "active": true
+}
+```
 
-### Making a Progressive Web App
+## 🌐 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Project ini dapat di-deploy ke Netlify:
 
-### Advanced Configuration
+1. Push ke GitHub
+2. Connect repository di Netlify
+3. Build command: `npm run build`
+4. Publish directory: `build`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📄 License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License
